@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <style>
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      mso-font-alt: 'Verdana';
+      src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    }
+
+    * {
+      font-family: 'Poppins', Arial, Verdana, sans-serif !important;
+    }
+  </style>
+  </head>
+
+  <body class="[&amp;_p]:my-0" style="background-color:rgb(249,250,251);color:rgb(75,85,99);display:flex;align-items:center;justify-content:center;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;">
+    <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="background-color:rgb(229,231,235);width:560px;max-width:560px !important;padding:2rem;border-radius:0.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;height:fit-content;margin-top:2rem;margin-bottom:2rem">
+      <tbody>
+        <tr style="width:100%">
+          <td>
+            <p style="text-align:center;font-size:1.5rem;line-height:2rem;font-weight:700;margin:16px 0">Nota Fiscal de Serviço</p>
+            <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">
+              Olá, <b><!--  -->{{ client_name }}<!--  --></b>!<br />Esperamos que esteja tudo bem com você!<br />Sua nota fiscal de serviço foi emitida com sucesso e está disponível para download.
+            </p>
+            <div style="background-color:rgb(255,255,255);border-width:1px;border-color:rgb(209,213,219);padding:1.5rem;border-radius:0.375rem;margin-top:1rem;font-size:0.875rem;line-height:1.25rem;gap:1rem">
+              <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
+                <tbody>
+                  <tr>
+                    <td>
+                      <td data-id="__react-email-column" style="width:100%">
+                        <div style="width:fit-content">
+                          <img src="https://dvetw49dgipsl.cloudfront.net/static/images/logo.png" alt="" style="width:auto;height:1.25rem;margin-left:0.5rem;vertical-align:middle" />
+                          <p style="width:fit-content;margin-top:0px !important;margin-bottom:0px !important;line-height:1.25rem;vertical-align:text-bottom;height:100%;font-size:14px;margin:16px 0;float:left">NFS-e</p>
+                        </div>
+                        <p style="font-size:1.5rem;line-height:2rem;margin-top:0px !important;margin-bottom:0px !important;font-weight:800;margin:16px 0">
+                          R$ <!--  -->{{ amount }}
+                        </p>
+                        <hr style="border-top-width:1px;border-color:rgb(209,213,219);margin-top:1rem;margin-bottom:1rem;width:100%;border:none;border-top:1px solid #eaeaea" />
+                        <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="list-style-type:none;display:flex;flex-direction:column;gap:0.25rem">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <b>Prestador:</b> <!--  -->{{ org_name }}
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <b>Tomador:</b> <!--  -->{{ client_name }}
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <b>Número NFS-e:</b> <!--  -->{{ nfse_number }}
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <b>Data de Emissão:</b> <!--  -->{{ emission_date }}
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td align="right" data-id="__react-email-column" style="padding-left:2rem">
+                        <img src="https://dvetw49dgipsl.cloudfront.net/static/images/document.png" alt="" style="width:8rem;height:auto" />
+                      </td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="{{ nfse_url }}" class="hover:brightness-105" style="background-color:rgb(59,130,246);color:rgb(255,255,255);font-weight:600;padding-top:0.75rem;padding-bottom:0.75rem;padding-left:1rem;padding-right:1rem;border-radius:0.375rem;text-align:center;display:block;margin-top:1rem;text-decoration:none" target="_blank">Baixar NFS-e</a>
+            </div>
+            <div style="background-color:rgb(255,255,255);border-width:1px;border-color:rgb(209,213,219);padding:1.5rem;border-radius:0.375rem;margin-top:1rem;gap:1rem">
+              <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
+                <tbody>
+                  <tr>
+                    <td>
+                      <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="padding-bottom:0.5rem">
+                        <tbody style="width:100%">
+                          <tr style="width:100%">
+                            <td data-id="__react-email-column">
+                              <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">
+                                <b>{{ product }}</b>
+                              </p>
+                              <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">Qtd: 1</p>
+                              {% if description %}
+                                <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">Descrição: {{ description }}</p>
+                              {% endif %}
+                            </td>
+                            <td align="right" data-id="__react-email-column">
+                              <p style="font-weight:700;font-size:14px;line-height:24px;margin:16px 0">
+                                R$ <!--  -->{{ amount }}
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <hr style="margin-top:0px !important;margin-bottom:0.5rem !important;width:100%;border:none;border-top:1px solid #eaeaea" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="font-weight:700;margin-top:1.5rem">
+                <tbody style="width:100%">
+                  <tr style="width:100%">
+                    <td data-id="__react-email-column">
+                      <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">TOTAL</p>
+                    </td>
+                    <td align="right" data-id="__react-email-column" style="padding-left:2rem">
+                      <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">
+                        R$ <!--  -->{{ amount }}
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {% if boleto_url %}
+              <div style="background-color:rgb(255,255,255);border-width:1px;border-color:rgb(209,213,219);padding:1.5rem;border-radius:0.375rem;margin-top:1rem;gap:1rem">
+                <p style="margin-top:0px !important;margin-bottom:0px !important;font-size:14px;line-height:24px;margin:16px 0">
+                  Você também pode acessar o boleto para pagamento:
+                </p>
+                <a href="{{ boleto_url }}" class="hover:brightness-105" style="background-color:rgb(244, 245, 247);color:rgb(75,85,99);font-weight:600;padding-top:0.75rem;padding-bottom:0.75rem;padding-left:1rem;padding-right:1rem;border-radius:0.375rem;text-align:center;display:block;margin-top:1rem;text-decoration:none" target="_blank">Acessar Boleto</a>
+              </div>
+            {% endif %}
+
+            <img src="https://dvetw49dgipsl.cloudfront.net/static/images/logo-mw.png" alt="" style="height:2rem;width:auto;margin-top:1.5rem;align-self:center;display:block;margin-left:auto;margin-right:auto" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
