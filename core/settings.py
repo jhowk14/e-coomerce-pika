@@ -50,7 +50,7 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "e-coomerce gov API",
     "DESCRIPTION": "API do e-coomerce gov",
     "VERSION": "1.0.0",
-    "SERVE_PERMISSIONS": ["rest_framework.permissions.IsAdminUser"],
+    "SERVE_PERMISSIONS": ["core.permissions.IsSuperuserAndStaff"],
 }
 
 # Application definition
